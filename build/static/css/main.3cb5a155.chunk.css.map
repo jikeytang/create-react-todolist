@@ -1,0 +1,1 @@
+{"version":3,"sources":["App.css"],"names":[],"mappings":"AAAA,8CACC,2BACD,CACA,WACC,eACD","file":"main.3cb5a155.chunk.css","sourcesContent":[".todoapp .new-todo::-webkit-input-placeholder {\r\n\tfont-style:normal !important;\r\n}\r\n.todo-list{\r\n\tmin-height:45vh;\r\n}"]}
