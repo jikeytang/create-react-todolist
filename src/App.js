@@ -9,9 +9,9 @@ import TodoApp from './pages'
 
 function App () {
   return (
-    // <Provider store={store}>
+    <Provider store={store}>
       <TodoApp />
-    // </Provider>
+    </Provider>
   )
 }
 
