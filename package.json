@@ -2,6 +2,7 @@
   "name": "create-react-todolist",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jikeytang.github.io/create-react-todolist/build/",
   "dependencies": {
     "babel-plugin-import": "^1.11.0",
     "director": "^1.2.8",
