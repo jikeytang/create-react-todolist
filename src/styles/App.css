@@ -1,0 +1,6 @@
+.todoapp .new-todo::-webkit-input-placeholder {
+	font-style:normal !important;
+}
+.todo-list{
+	min-height:45vh;
+}
