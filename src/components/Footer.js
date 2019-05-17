@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
+import FilterLink from '@/containers/FilterLink';
 
 class Footer extends Component {
 
-
   render () {
-    const showCurrent = (current) => {
-      return this.props.current === current ? 'selected' : ''
-    }
+    // const showCurrent = (current) => {
+    //   return this.props.current === current ? 'selected' : ''
+    // }
 
     return (
       <footer className="footer">
@@ -14,15 +14,9 @@ class Footer extends Component {
           <strong>{this.props.remaining}</strong> 项
         </span>
         <ul className="filters">
-          <li>
-            <a href="#/" className={showCurrent('all')}>全部</a>
-          </li>
-          <li>
-            <a href="#/active" className={showCurrent('active')}>进行中</a>
-          </li>
-          <li>
-            <a href="#/completed" className={showCurrent('completed')}>已完成</a>
-          </li>
+          <FilterLink filter="SHOW_ALL">全部</FilterLink>
+          <FilterLink filter="SHOW_ACTIVE">进行中</FilterLink>
+          <FilterLink filter="SHOW_COMPLETED">已完成</FilterLink>
         </ul>
         <button className="clear-completed" onClick={this.props.onRemoveCompleted.bind(this)}>清除</button>
       </footer>
