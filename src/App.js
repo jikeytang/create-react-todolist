@@ -7,7 +7,7 @@ import rootReducer from './reducers'
 
 const store = createStore(rootReducer)
 
-function App () {
+function App() {
   return (
     <Provider store={store}>
       <TodoApp />
@@ -15,4 +15,4 @@ function App () {
   )
 }
 
-export default App;
+export default App

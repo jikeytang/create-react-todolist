@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
-import TodoList from '@/components/TodoList'
 import stateman from 'stateman'
+import AddTodo from '@/containers/AddTodo'
+import VisibleTodoList from '@/containers/VisibleTodoList'
+import Footer from '@/components/Footer'
 import util from '@/util'
 
 class TodoApp extends Component {
@@ -95,17 +95,11 @@ class TodoApp extends Component {
   render () {
     return (
       <div className="todoapp">
-        <Header addTodo={this.addTodo.bind(this)}></Header>
+        <AddTodo></AddTodo>
+        <VisibleTodoList></VisibleTodoList>
         <section className="main">
           <input id="toggle-all" className="toggle-all" type="checkbox" onChange={this.toggleAll.bind(this)} />
           <label htmlFor="toggle-all"/>
-          <TodoList
-            todos={this.state.filteredTodos}
-            onDestroy={this.destroy.bind(this)}
-            onEdit={this.edit.bind(this)}
-            onToggle={this.toggle.bind(this)}
-            onSave={this.save.bind(this)}
-          />
         </section>
         <Footer
           current={this.state.current}
