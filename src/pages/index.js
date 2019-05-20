@@ -97,15 +97,16 @@ class TodoApp extends Component {
       <div className="todoapp">
         <AddTodo></AddTodo>
         <VisibleTodoList></VisibleTodoList>
-        <section className="main">
-          <input id="toggle-all" className="toggle-all" type="checkbox" onChange={this.toggleAll.bind(this)} />
-          <label htmlFor="toggle-all"/>
-        </section>
-        <Footer
-          current={this.state.current}
-          remaining={util.all(this.state.todos).length}
-          onRemoveCompleted={this.removeCompleted.bind(this)}
-        />
+        <Footer></Footer>
+        {/*<section className="main">*/}
+          {/*<input id="toggle-all" className="toggle-all" type="checkbox" onChange={this.toggleAll.bind(this)} />*/}
+          {/*<label htmlFor="toggle-all"/>*/}
+        {/*</section>*/}
+        {/*<Footer*/}
+          {/*current={this.state.current}*/}
+          {/*remaining={util.all(this.state.todos).length}*/}
+          {/*onRemoveCompleted={this.removeCompleted.bind(this)}*/}
+        {/*/>*/}
       </div>
     )
   }

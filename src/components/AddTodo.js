@@ -22,7 +22,7 @@ export default class extends Component {
     return (
       <header className="header">
         <h1>todos</h1>
-        <input type="text" onKeyUp={this.handleNewTodo.bind(this)} placeholder="请输入待办事项" className="new-todo" autoFocus={true} />
+        <input type="text" placeholder="请输入待办事项" className="new-todo" autoFocus={true} />
       </header>
     )
   }
