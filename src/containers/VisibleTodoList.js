@@ -3,6 +3,7 @@ import { toggleTodo, deleteTodo } from '../actions'
 import TodoList from '@/components/TodoList'
 
 const getVisibleTodos = (todos, filter) => {
+  debugger
   switch (filter) {
     case 'SHOW_ALL':
       return todos
